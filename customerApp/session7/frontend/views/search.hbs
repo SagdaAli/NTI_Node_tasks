@@ -1,0 +1,31 @@
+{{>header}}
+{{>navbar}}
+   <form method="get">
+  
+    <input type="text" name="search" placeholder="search">
+    <button type="submit">search</button>
+   </form>
+  
+
+   <table class="table table-stripped">
+     <thead>
+       <tr>
+         <td>Name</td>
+         <td>Balance</td>
+         <td>Account Number</td>
+       </tr>
+
+     </thead>
+     <tbody>
+        <tr>
+         <td>{{allData.name}}</td>
+         <td>{{allData.balance}}</td>
+         <td>{{allData.accnum}}</td>
+       </tr>
+
+     </tbody>
+
+
+   </table>
+
+{{>footer}}
